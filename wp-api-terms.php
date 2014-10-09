@@ -9,12 +9,11 @@
 
 if ( ! function_exists( 'vpm_wp_api_set_post_terms' ) ) {
 	function vpm_wp_api_set_post_terms($post, $data, $update) {
-		if ( !empty( $data['x-terms'][0] ) && is_array( $data['x-terms'] ) ) {
+		if ( !empty( $data['x-terms'][0] ) && is_array( $data['x-terms'][0] ) ) {
 			foreach( $data['x-terms'][0] as $taxonomy => $term_data ) {
 				if ( !empty( $term_data['terms'] ) && is_array( $term_data['terms'] ) ) {
 					$defaults = array(
 						'append' => 'false',
-						'terms'  => array(),
 					);
 
 					$term_data = wp_parse_args( $term_data, $defaults );
