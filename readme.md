@@ -2,7 +2,7 @@
 
 This is a simple plugin that lets you add terms when you POST new content to the WP REST API.
 
-Here's an example of a JSON post object (posted to `/wp-json/posts`) that will create a new post with some tags:
+Here's an example of a JSON post object (POSTed to `/wp-json/posts`) that will create a new post with some tags:
 
 ```json
 {
@@ -74,7 +74,7 @@ and both at the same time:
 }
 ```
 
-I'm indebted to WordPress.org user [WizADSL](https://profiles.wordpress.org/WizADSL/) who created the original version of this plugin for categories and tags.
+I'm indebted to WordPress.org user [WizADSL](https://profiles.wordpress.org/WizADSL/) who created the [original version](https://wordpress.org/plugins/json-rest-api-wp-api-categories-and-tags/) of this plugin for categories and tags.
 
 ## License
 
