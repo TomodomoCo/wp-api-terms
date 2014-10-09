@@ -65,7 +65,7 @@ and both at the same time:
 	"content_raw": "My awesome content",
 	"x-terms": [{
 		"post_tag": {
-			"apppend": "true",
+			"append": "true",
 			"terms": [
 				"my_appended_tag"
 			]
